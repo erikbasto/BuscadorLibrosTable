@@ -10,15 +10,30 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var titleDetail: UILabel!
+    @IBOutlet weak var authorsDetail: UILabel!
 
-
+    @IBOutlet weak var isbnDetail: UILabel!
+    
+    @IBOutlet weak var coverImageDetail: UIImageView!
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.timestamp!.description
+            if let labelTitle = titleDetail{
+                labelTitle.text = detail.title
             }
+            if let labelAuthors = authorsDetail
+            {
+                labelAuthors.text = detail.authors
+            }
+            if let labelIsbn = isbnDetail{
+                labelIsbn.text = detail.isbn
+            }
+            if let imageCover = coverImageDetail{
+                imageCover.image = UIImage(data: detail.cover! as Data)
+            }
+            
         }
     }
 
@@ -33,13 +48,13 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: Event? {
+    var detailItem: Book? {
         didSet {
             // Update the view.
             configureView()
         }
     }
-
-
+    
+  
 }
 

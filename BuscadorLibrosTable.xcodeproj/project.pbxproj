@@ -14,6 +14,8 @@
 		BF0FB19D1F644E18003E4CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0FB19B1F644E18003E4CAF /* Main.storyboard */; };
 		BF0FB19F1F644E18003E4CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0FB19E1F644E18003E4CAF /* Assets.xcassets */; };
 		BF0FB1A21F644E18003E4CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0FB1A01F644E18003E4CAF /* LaunchScreen.storyboard */; };
+		BF0FB1AA1F6485DF003E4CAF /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FB1A91F6485DF003E4CAF /* SearchBookViewController.swift */; };
+		BF0FB1AC1F648C03003E4CAF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FB1AB1F648C03003E4CAF /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BF0FB19E1F644E18003E4CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF0FB1A11F644E18003E4CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF0FB1A31F644E18003E4CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0FB1A91F6485DF003E4CAF /* SearchBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
+		BF0FB1AB1F648C03003E4CAF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				BF0FB1A01F644E18003E4CAF /* LaunchScreen.storyboard */,
 				BF0FB1A31F644E18003E4CAF /* Info.plist */,
 				BF0FB1941F644E18003E4CAF /* BuscadorLibrosTable.xcdatamodeld */,
+				BF0FB1A91F6485DF003E4CAF /* SearchBookViewController.swift */,
+				BF0FB1AB1F648C03003E4CAF /* Reachability.swift */,
 			);
 			path = BuscadorLibrosTable;
 			sourceTree = "<group>";
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0FB1AA1F6485DF003E4CAF /* SearchBookViewController.swift in Sources */,
 				BF0FB1961F644E18003E4CAF /* BuscadorLibrosTable.xcdatamodeld in Sources */,
+				BF0FB1AC1F648C03003E4CAF /* Reachability.swift in Sources */,
 				BF0FB1931F644E18003E4CAF /* AppDelegate.swift in Sources */,
 				BF0FB1981F644E18003E4CAF /* MasterViewController.swift in Sources */,
 				BF0FB19A1F644E18003E4CAF /* DetailViewController.swift in Sources */,
